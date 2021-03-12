@@ -1,5 +1,17 @@
 package com.example.demo.bbs.domain;
 
-public class BoardDto {
+import java.io.Serializable;
 
+import org.springframework.stereotype.Component;
+
+import com.example.demo.uss.domain.UserDto;
+
+import lombok.Data;
+
+@Component
+@Data
+public class BoardDto implements Serializable{
+	private static final long serialVersionUID = 1L;
+	private long BoardNo;
+	private String BoardName;
 }
